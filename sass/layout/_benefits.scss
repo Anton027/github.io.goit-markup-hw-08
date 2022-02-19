@@ -1,0 +1,27 @@
+.benefits__list {
+  @extend %display-wrap;
+  margin: -15px;
+}
+.benefits__item {
+  flex-basis: calc(100% / 4 - var(--item-space-gap));
+  margin: 15px;
+}
+.benefits__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--item-space-gap);
+
+  @include size(270px, 120px);
+
+  background: var(--first-btn-color);
+  border-radius: 4px;
+}
+.benefits__subtitle {
+  margin-bottom: 10px;
+
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.14;
+}

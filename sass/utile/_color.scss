@@ -1,0 +1,15 @@
+.nav__link:hover,
+.nav__link:focus,
+.contact:hover,
+.contact:focus,
+.address-link.map:hover,
+.address-link.map:focus,
+.nav__link,
+.nav__link.current,
+.logo__part {
+  color: var(--accent-color);
+}
+
+.color {
+  color: var(--title-text-color);
+}

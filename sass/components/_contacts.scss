@@ -1,0 +1,31 @@
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: inherit;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color var(--transition-time) var(--function-time);
+}
+
+.contacts {
+  display: flex;
+
+  margin-left: auto;
+}
+
+.contacts .contacts__item + .contacts__item {
+  margin-left: 50px;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

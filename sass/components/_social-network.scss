@@ -1,0 +1,27 @@
+.social-network {
+  @extend %display-wrap;
+  list-style: none;
+
+  & .social-network__item + .social-network__item {
+    margin-left: 10px;
+  }
+}
+
+.social-network__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include size(44px, 44px);
+
+  // min-width: 44px;
+  // min-height: 44px;
+  border-radius: 50%;
+
+  transition: background-color var(--transition-time) var(--function-time),
+    color var(--transition-time) var(--function-time);
+}
+
+.social-network__icon {
+  fill: currentColor;
+}

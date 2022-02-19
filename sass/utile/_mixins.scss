@@ -1,0 +1,4 @@
+@mixin size($mw, $mh) {
+  min-width: $mw;
+  min-height: $mh;
+}

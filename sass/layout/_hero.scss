@@ -1,0 +1,60 @@
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
+  margin-top: 0;
+  background-color: var(--primary-bg-color);
+
+  &__main {
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    margin-bottom: var(--item-space-gap);
+
+    color: var(--main-light-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
+.hero__btn {
+  @include size(200px, null);
+  // min-width: 200px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--main-light-color);
+  background-color: var(--accent-color);
+
+  transform: background-color var(--transition-time) var(--function-time);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-btn-color);
+  }
+}
