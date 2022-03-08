@@ -1,12 +1,10 @@
 .overlay {
+  max-width: 1600px;
+  min-height: 600px;
   margin-right: auto;
   margin-left: auto;
 
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg-hero.jpg);
 
   background-repeat: no-repeat;
@@ -15,58 +13,35 @@
 }
 
 .hero {
-  padding: 118px 60px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
   margin-top: 0;
   background-color: var(--primary-bg-color);
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    min-width: 1600px;
-    min-height: 600px;
-
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-
   &__main {
-    @media screen and (min-width: 1200px) {
-      max-width: 696px;
-    }
-
+    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
   }
 
   &__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.769;
-
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
     margin-bottom: var(--item-space-gap);
 
     color: var(--main-light-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
 
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.4;
-    }
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 }
 
 .hero__btn {
   @include size(200px, null);
-  min-width: 200px;
+  // min-width: 200px;
   padding: 10px 32px;
 
   font-weight: 700;

@@ -3,19 +3,14 @@
 }
 
 .team__list {
-  @media screen and(min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
+  @extend %display-wrap;
 
-    margin: -15px;
-  }
+  margin: -15px;
 }
 
 .team__item {
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4 - var(--item-space-gap));
-    margin: 15px;
-  }
+  flex-basis: calc(100% / 4 - var(--item-space-gap));
+  margin: 15px;
 
   text-align: center;
 
@@ -33,11 +28,6 @@
 
 .team__content {
   padding: var(--item-space-gap) 32px;
-}
-
-.team__img {
-  background-position: center;
-  background-size: cover;
 }
 
 .team__name {

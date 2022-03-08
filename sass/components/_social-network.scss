@@ -2,10 +2,6 @@
   @extend %display-wrap;
   list-style: none;
 
-  @media screen and(max-width: 767px) {
-    justify-content: center;
-  }
-
   & .social-network__item + .social-network__item {
     margin-left: 10px;
   }
