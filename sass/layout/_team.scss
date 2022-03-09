@@ -3,14 +3,16 @@
 }
 
 .team__list {
-  @extend %display-wrap;
+  // @extend %display-wrap;
 
-  margin: -15px;
+  // margin: -15px;
+  margin: -30px;
 }
 
 .team__item {
   flex-basis: calc(100% / 4 - var(--item-space-gap));
-  margin: 15px;
+  // margin: 15px;
+  margin: 30px;
 
   text-align: center;
 
@@ -23,7 +25,8 @@
 }
 
 .team__title {
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team__content {

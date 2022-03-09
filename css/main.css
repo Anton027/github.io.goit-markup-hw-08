@@ -18,7 +18,7 @@
   --function-time: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.benefits__list, .developments__list, .team__list, .clients__list, .filter, .card-set, .join-list, .subscribe__list, .social-network {
+.benefits__list, .developments__list, .clients__list, .filter, .card-set, .join-list, .subscribe__list, .social-network {
   display: flex;
   flex-wrap: wrap;
 }
@@ -203,12 +203,12 @@
 }
 
 .team__list {
-  margin: -15px;
+  margin: -30px;
 }
 
 .team__item {
   flex-basis: calc(100% / 4 - var(--item-space-gap));
-  margin: 15px;
+  margin: 30px;
   text-align: center;
   overflow: hidden;
   background: #ffffff;
@@ -217,7 +217,7 @@
 }
 
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team__content {
@@ -808,6 +808,8 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
 }
@@ -828,20 +830,20 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.25;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -898,6 +900,7 @@ body {
 }
 
 .social-network {
+  justify-content: center;
   list-style: none;
 }
 

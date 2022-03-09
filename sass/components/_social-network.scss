@@ -1,5 +1,6 @@
 .social-network {
   @extend %display-wrap;
+  justify-content: center;
   list-style: none;
 
   & .social-network__item + .social-network__item {
