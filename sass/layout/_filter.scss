@@ -1,7 +1,13 @@
 .filter {
-  @extend %display-wrap;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    width: 362px;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
 
   margin-bottom: 50px;
 

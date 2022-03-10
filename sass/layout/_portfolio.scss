@@ -1,13 +1,24 @@
 .card-set {
-  @extend %display-wrap;
-  margin: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   background: var(--main-light-color);
 }
 
 .card-set__item {
-  flex-basis: calc(100% / 3 - var(--item-space-gap));
-  margin: 15px;
+  @media screen and (max-width: 767px) {
+    margin-top: var(--item-space-gap);
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - var(--item-space-gap));
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - var(--item-space-gap));
+  }
 
   transition: box-shadow var(--transition-time) var(--function-time);
 }
