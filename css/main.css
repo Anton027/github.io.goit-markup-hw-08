@@ -338,17 +338,29 @@
 }
 
 .modal {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0) scale(1);
   transition: var(--transition-time) var(--function-time);
   padding: 40px;
-  min-width: 528px;
-  min-height: 581px;
   background: var(--main-light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__btn {
@@ -383,16 +395,28 @@
 }
 
 .form-order__list {
-  min-width: 448px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-order__list {
+    min-width: 448px;
+  }
 }
 
 .form-order__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  text-align: center;
+  line-height: 1.5;
   color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .form-order__title {
+    line-height: 1.15;
+  }
 }
 
 .form-order__item {
@@ -412,6 +436,8 @@
 }
 
 .form-order__input {
+  width: 100%;
+  height: auto;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 11px 12px;
@@ -450,8 +476,8 @@
 
 .form-order__textarea {
   resize: none;
-  padding: 12px 16px;
   min-height: 120px;
+  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--transition-time) var(--function-time);
@@ -478,12 +504,19 @@
   justify-content: center;
   font-family: Roboto;
   font-style: normal;
+  font-size: 12px;
+  line-height: 1.16;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbox__link {
@@ -605,9 +638,14 @@
 }
 
 .filter {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -620,6 +658,13 @@
   .filter {
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
