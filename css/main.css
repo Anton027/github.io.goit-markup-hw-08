@@ -648,12 +648,6 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .filter {
-    width: 362px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .filter {
     align-items: center;
@@ -706,6 +700,7 @@
 }
 
 .card-set__item {
+  justify-content: center;
   transition: box-shadow var(--transition-time) var(--function-time);
 }
 
@@ -774,6 +769,7 @@
 
 .portfolio__link {
   display: inline-block;
+  width: 100%;
   text-decoration: none;
   font-style: inherit;
   color: inherit;

@@ -19,6 +19,7 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - var(--item-space-gap));
   }
+  justify-content: center;
 
   transition: box-shadow var(--transition-time) var(--function-time);
 }
@@ -73,7 +74,7 @@
 
 .portfolio__link {
   display: inline-block;
-
+  width: 100%;
   text-decoration: none;
   font-style: inherit;
   color: inherit;
