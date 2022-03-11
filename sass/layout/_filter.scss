@@ -3,10 +3,8 @@
     display: flex;
     flex-wrap: wrap;
   }
-  // @media screen and (max-width: 767px) {
-  //   width: 362px;
-  // }
-  @media screen and (min-width: 768px) {
+
+  @include tab {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
@@ -15,9 +13,17 @@
     margin-bottom: 50px;
   }
   margin-bottom: 40px;
+}
 
-  & .filter__item + .filter__item {
+@media screen and (min-width: 480px) {
+  .filter .filter__item + .filter__item {
     margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .filter .filter__item + .filter__item {
+    margin-top: 8px;
   }
 }
 

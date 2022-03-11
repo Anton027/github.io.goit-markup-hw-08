@@ -662,8 +662,16 @@
   }
 }
 
-.filter .filter__item + .filter__item {
-  margin-left: 8px;
+@media screen and (min-width: 480px) {
+  .filter .filter__item + .filter__item {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .filter .filter__item + .filter__item {
+    margin-top: 8px;
+  }
 }
 
 .filter__btn {
@@ -1040,7 +1048,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid violet;
 }
 
 @media screen and (min-width: 480px) {
