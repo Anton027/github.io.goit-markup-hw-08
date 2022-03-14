@@ -3,8 +3,17 @@
   padding-bottom: 60px;
 
   background-color: var(--primary-bg-color);
-  @media screen and(max-width: 767px) {
+  @media screen and(max-width: 1199px) {
     text-align: center;
+  }
+
+  &__wrapper {
+    @include tab {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+      margin-bottom: 60px;
+    }
   }
 
   &__main {
@@ -54,6 +63,9 @@
 .join {
   @include size(206px, null);
   // min-width: 206px;
+  // @include tab{
+  //   margin-left: auto;
+  // }
   @include desk {
     margin-left: 70px;
   }
