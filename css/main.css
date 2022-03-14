@@ -207,6 +207,12 @@
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .developments {
+    display: none;
+  }
+}
+
 .developments__list {
   margin: -15px;
 }
@@ -999,9 +1005,14 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .subscribe__input {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscribe__input {
     min-width: 450px;
     min-height: 50px;
   }
