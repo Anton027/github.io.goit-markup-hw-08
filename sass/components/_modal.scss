@@ -9,6 +9,8 @@
 
   transition: opacity var(--transition-time) var(--function-time),
     visibility var(--transition-time) var(--function-time);
+
+  overflow-y: scroll;
 }
 
 .is-hidden {

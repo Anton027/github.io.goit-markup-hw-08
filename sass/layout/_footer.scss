@@ -3,10 +3,15 @@
   padding-bottom: 60px;
 
   background-color: var(--primary-bg-color);
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
 
   &__main {
-    display: flex;
-    align-items: baseline;
+    @include desk {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &__logo {
@@ -17,10 +22,13 @@
 }
 
 .address {
-  display: flex;
+  // display: flex;
 
   text-decoration: none;
   font-style: normal;
+  @media screen and(max-width:767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .address-link.map {
@@ -28,14 +36,15 @@
 }
 
 .address-link {
-  display: flex;
-
   text-decoration: none;
   font-style: inherit;
 
   transition: color var(--transition-time) var(--function-time);
 
   color: var(--address-main-color);
+  @include desk {
+    display: flex;
+  }
 }
 
 .address-item:not(:last-child) {
@@ -45,10 +54,18 @@
 .join {
   @include size(206px, null);
   // min-width: 206px;
-  margin-left: 70px;
+  @include desk {
+    margin-left: 70px;
+  }
+  @media screen and(max-width:767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .join__text {
+  @media screen and(max-width:1199px) {
+    text-align: center;
+  }
   margin-bottom: 20px;
 
   color: var(--main-light-color);
@@ -84,8 +101,9 @@
 .subscribe {
   display: flex;
   flex-direction: column;
-
-  margin-left: 93px;
+  @media screen and(min-width:1200px) {
+    margin-left: 93px;
+  }
 }
 
 .subscribe__text {
@@ -99,18 +117,31 @@
 }
 
 .subscribe__list {
-  @extend %display-wrap;
+  @include desk {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-  & .subscribe__item + .subscribe__item {
+  @media screen and(max-width:1199px) {
+    justify-content: center;
+  }
+}
+@include desk {
+  .subscribe__list .subscribe__item + .subscribe__item {
     margin-left: 12px;
   }
 }
-
 .subscribe__input {
   padding: 15px;
+  @include desk {
+    @include size(356px, 50px);
+  }
 
-  @include size(356px, 50px);
-  // min-width: 358px;
+  @media screen and(min-width:480px) and(max-width:1199px) {
+    margin-bottom: 20px;
+    @include size(450px, 50px);
+  }
+  min-width: 207px;
   // min-height: 50px;
 
   color: var(--main-light-color);
@@ -135,7 +166,10 @@
 }
 
 .subscribe__btn {
-  display: flex;
+  @include desk {
+    display: flex;
+  }
+
   align-items: center;
 
   padding: 10px 28px;
