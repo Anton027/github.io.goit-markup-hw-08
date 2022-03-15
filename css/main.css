@@ -329,9 +329,9 @@
   width: 100vw;
   height: 100vh;
   z-index: 2;
+  overflow-y: scroll;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity var(--transition-time) var(--function-time), visibility var(--transition-time) var(--function-time);
-  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -1131,6 +1131,10 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
   margin: 0;
+}
+
+body.modal-oppen {
+  overflow: hidden;
 }
 
 .section {

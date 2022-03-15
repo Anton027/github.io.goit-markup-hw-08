@@ -5,12 +5,11 @@
   height: 100vh;
   z-index: 2;
 
+  overflow-y: scroll;
   background: rgba(0, 0, 0, 0.2);
 
   transition: opacity var(--transition-time) var(--function-time),
     visibility var(--transition-time) var(--function-time);
-
-  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -41,8 +40,6 @@
     @include size(528px, 581px);
   }
   padding: 40px;
-
-  //
 
   background: var(--main-light-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
