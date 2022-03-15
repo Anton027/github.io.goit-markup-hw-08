@@ -184,7 +184,7 @@
   @include desk {
     display: flex;
   }
-
+  display: inline-flex;
   align-items: center;
 
   padding: 10px 28px;

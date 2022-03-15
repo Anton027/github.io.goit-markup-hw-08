@@ -112,13 +112,14 @@
   position: relative;
 
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
 
   color: var(--title-text-color);
 
   &:not(:last-child) {
     margin-bottom: 10px;
+    flex-direction: column;
   }
 
   &:nth-child(4) {
@@ -229,8 +230,16 @@
 }
 
 .checkbox__link {
+  display: inline-block;
   color: var(--accent-color);
   margin-left: 3px;
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  font-weight: 400;
+
+  letter-spacing: 0.03em;
 }
 
 .checkbox__input {
@@ -239,6 +248,8 @@
   appearance: none;
 
   position: absolute;
+
+  display: inline-block;
 }
 
 .checkbox__icon {

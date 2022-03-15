@@ -1,9 +1,10 @@
 .contacts__link {
   display: flex;
   align-items: center;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @include desk {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   color: inherit;
 
@@ -17,13 +18,25 @@
 
 .contacts {
   display: flex;
-
   margin-left: auto;
-}
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    flex-direction: column;
+  }
 
-.contacts .contacts__item + .contacts__item {
-  margin-left: 50px;
+  @include desk {
+    .contacts__item + .contacts__item {
+      margin-left: 50px;
+    }
+  }
 }
+.contacts__item {
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    padding: 5px;
+  }
+}
+// .contacts .contacts__item + .contacts__item {
+//   margin-left: 50px;
+// }
 
 .contacts__icon {
   margin-right: 10px;

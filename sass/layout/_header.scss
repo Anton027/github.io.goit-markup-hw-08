@@ -17,7 +17,13 @@
 
 .nav__list {
   display: flex;
-  margin-left: 93px;
+
+  @include tab {
+    margin-left: 88px;
+  }
+  @include desk {
+    margin-left: 93px;
+  }
 }
 
 .nav__item {

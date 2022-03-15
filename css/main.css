@@ -41,7 +41,18 @@
 
 .nav__list {
   display: flex;
-  margin-left: 93px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
+  }
 }
 
 .nav__item {
@@ -441,13 +452,13 @@
 .form-order__item {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   color: var(--title-text-color);
 }
 
 .form-order__item:not(:last-child) {
   margin-bottom: 10px;
+  flex-direction: column;
 }
 
 .form-order__item:nth-child(4) {
@@ -544,8 +555,18 @@
 }
 
 .checkbox__link {
+  display: inline-block;
   color: var(--accent-color);
   margin-left: 3px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__link {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbox__input {
@@ -553,6 +574,7 @@
   -moz-appearance: none;
   appearance: none;
   position: absolute;
+  display: inline-block;
 }
 
 .checkbox__icon {
@@ -1051,6 +1073,7 @@
 }
 
 .subscribe__btn {
+  display: inline-flex;
   align-items: center;
   padding: 10px 28px;
   min-width: 200px;
@@ -1215,8 +1238,6 @@ body.modal-oppen {
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: inherit;
   font-weight: 500;
   line-height: 1.14;
@@ -1225,13 +1246,34 @@ body.modal-oppen {
   transition: color var(--transition-time) var(--function-time);
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .contacts {
   display: flex;
   margin-left: auto;
 }
 
-.contacts .contacts__item + .contacts__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts .contacts__item + .contacts__item {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item {
+    padding: 5px;
+  }
 }
 
 .contacts__icon {
