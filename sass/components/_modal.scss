@@ -52,7 +52,7 @@
 
 .modal__btn {
   position: absolute;
-  top: 8px;
+  top: 25px;
   right: 8px;
 
   display: flex;
@@ -73,6 +73,9 @@
   &:focus {
     color: var(--hover-btn-color);
   }
+  @include tel {
+    top: 8px;
+  }
 }
 
 .modal__icon {
@@ -89,8 +92,10 @@
   @media screen and (min-width: 1200px) {
     min-width: 448px;
   }
-
-  margin-bottom: 30px;
+  @include tel {
+    margin-bottom: 30px;
+  }
+  margin-bottom: 10px;
 }
 
 .form-order__title {
@@ -171,7 +176,10 @@
 
 .form-order__textarea {
   resize: none;
-  @include size(null, 120px);
+  @include tel {
+    @include size(null, 120px);
+  }
+
   padding: 12px 16px;
   @media screen and(min-width:1200px) {
   }
