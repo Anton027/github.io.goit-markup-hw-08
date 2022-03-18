@@ -7,7 +7,9 @@
   display: flex;
   align-items: center;
 }
-
+.header-main {
+  position: relative;
+}
 .header__logo {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -16,9 +18,9 @@
 }
 
 .nav__list {
-  display: flex;
-
+  display: none;
   @include tab {
+    display: flex;
     margin-left: 88px;
   }
   @include desk {

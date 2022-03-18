@@ -33,6 +33,10 @@
   align-items: center;
 }
 
+.header-main {
+  position: relative;
+}
+
 .header__logo {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -40,11 +44,12 @@
 }
 
 .nav__list {
-  display: flex;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .nav__list {
+    display: flex;
     margin-left: 88px;
   }
 }
@@ -629,25 +634,15 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-  .clients__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
-@media screen and (max-width: 479px) {
-  .clients__item {
-    margin-top: 30px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .clients__item {
-    margin: 15px;
-    flex-basis: calc(100% / 2 - 30px);
-  }
+.clients__item {
+  margin: 15px;
+  flex-basis: calc(100% / 2 - 30px);
 }
 
 @media screen and (min-width: 768px) {
@@ -1254,12 +1249,13 @@ body.modal-oppen {
 }
 
 .contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -1302,5 +1298,44 @@ body.modal-oppen {
 
 .social-network__icon {
   fill: currentColor;
+}
+
+.menu__btn {
+  display: inline-flex;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    display: none;
+  }
+}
+
+.menu__btn .menu__close {
+  display: none;
+}
+
+.menu__btn.is-open .menu__close {
+  display: block;
+}
+
+.menu__btn.is-open .menu__open {
+  display: none;
+}
+
+.menu__container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  outline: 1px solid red;
+}
+
+.menu__container.is-open {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

@@ -58,8 +58,31 @@
                     </a>
                 </li>
             </ul>
+            <button 
+                type="button" 
+                class="menu__btn" 
+                data-menu-button
+                aria-controls="menu__container"
+                aria-expanded="false"
+            >
+                <svg 
+                    width="40" height="40" 
+                    class="menu__icon"
+                    aria-label="Перемикач мобільного меню"
+                >
+                    <use class="menu__open" href="./images/svg/sprite.svg#icon-menu" class="menu__open"></use>
+                    <use class="menu__close" href="./images/svg/sprite.svg#icon-close_menu" class="menu__close"></use>
+                </svg>
+            </button>
+            <div
+                id="menu__container"
+                class="menu__container" 
+                data-menu
+            >
+                Contact menu
+            </div>
         </div>
-    </header> 
+    </header>  
 <!-- MAIN  -->
     <main>
 <!-- HERO -->
@@ -572,5 +595,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
