@@ -6,7 +6,9 @@
 .address-link.map:focus,
 .nav__link,
 .nav__link.current,
-.logo__part {
+.logo__part,
+.menu__link:hover,
+.menu__link:focus {
   color: var(--accent-color);
 }
 

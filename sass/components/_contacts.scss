@@ -19,11 +19,12 @@
 .contacts {
   display: none;
   margin-left: auto;
-  @media screen and(min-width:768px) and(max-width:1199px) {
+  @media screen and(min-width:768px) {
     display: flex;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
     flex-direction: column;
   }
-
   @include desk {
     .contacts__item + .contacts__item {
       margin-left: 50px;
