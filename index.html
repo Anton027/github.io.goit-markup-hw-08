@@ -61,9 +61,9 @@
             <button 
                 type="button" 
                 class="menu__btn" 
-                data-menu-button
+                
                 aria-controls="menu__container"
-                aria-expanded="false"
+                
             >
                 <svg 
                     width="40" height="40" 
@@ -71,15 +71,15 @@
                     aria-label="Перемикач мобільного меню"
                 >
                     <use class="menu__open" href="./images/svg/sprite.svg#icon-menu"></use>
-                    <use class="menu__close" href="./images/svg/sprite.svg#icon-close_menu"></use>
+                    
                 </svg>
             </button>
             <div
                 id="menu__container"
-                class="menu__container"  
+                class="menu__container is-hidden"  
                 data-menu
             >
-                <button data-menu-button aria-expanded="true" type="button" class="menu-close__btn">
+                <button type="button" class="menu-close__btn">
                     <svg width="40" height="40"  aria-label="закриття меню">
                         <use class="menu-close__close" href="./images/svg/sprite.svg#icon-close_menu"></use>
                     </svg>
@@ -103,7 +103,7 @@
                         </a>
                     </li>
                 </ul>
-                <div class="cont">
+                <div class="container">
                     <ul class="menu-contacts__list">
                         <li class="menu-contacts__item">
                             <a class="menu-contacts__tel" href="tel:+380961111111">
@@ -640,6 +640,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mob-menu.js"></script>
 </body>
 </html>

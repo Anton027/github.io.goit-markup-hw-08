@@ -1310,6 +1310,7 @@ body.modal-oppen {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  color: var(--title-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1318,25 +1319,17 @@ body.modal-oppen {
   }
 }
 
-.menu__btn .menu__close {
-  display: none;
-}
-
-.menu__btn.is-open .menu__close {
-  display: block;
-}
-
-.menu__btn.is-open .menu__open {
-  display: none;
-}
-
 .menu__container {
-  min-height: 796px;
-  display: none;
-  position: absolute;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  overflow: auto;
   padding: 48px 40px;
   background: var(--main-light-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1348,12 +1341,16 @@ body.modal-oppen {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu__container {
+    display: none;
+  }
+}
+
 .menu-close__btn {
   position: absolute;
   top: 10px;
   right: 15px;
-  padding: 0;
-  margin: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -1381,10 +1378,6 @@ body.modal-oppen {
 
 .menu__item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.menu__list {
-  margin-bottom: 302px;
 }
 
 .menu-contacts__tel {
