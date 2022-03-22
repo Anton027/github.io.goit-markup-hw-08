@@ -634,6 +634,7 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: -15px;
 }
 
@@ -1310,6 +1311,7 @@ body.modal-oppen {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: color var(--transition-time) var(--function-time);
   color: var(--title-text-color);
 }
 
@@ -1317,6 +1319,14 @@ body.modal-oppen {
   .menu__btn {
     display: none;
   }
+}
+
+.menu__btn:hover, .menu__btn:focus {
+  color: var(--accent-color);
+}
+
+.menu__icon {
+  fill: currentColor;
 }
 
 .menu__container {
@@ -1355,12 +1365,17 @@ body.modal-oppen {
   background-color: transparent;
   cursor: pointer;
   color: var(--title-text-color);
+  transition: color var(--transition-time) var(--function-time);
 }
 
 @media screen and (min-width: 768px) {
   .menu-close__btn {
     display: none;
   }
+}
+
+.menu-close__btn:hover, .menu-close__btn:focus {
+  color: var(--accent-color);
 }
 
 .menu-close__close {
@@ -1378,6 +1393,10 @@ body.modal-oppen {
 
 .menu__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.menu__link--current {
+  color: var(--accent-color);
 }
 
 .menu-contacts__tel {

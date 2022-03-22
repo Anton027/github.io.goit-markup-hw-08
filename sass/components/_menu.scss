@@ -7,7 +7,15 @@
   @include tab {
     display: none;
   }
+  transition: color var(--transition-time) var(--function-time);
   color: var(--title-text-color);
+  &:hover,&:focus{
+    color:var(--accent-color)
+  }
+}
+
+.menu__icon{
+  fill: currentColor;
 }
 
 .menu__container {
@@ -47,6 +55,10 @@
     display: none;
   }
   color: var(--title-text-color);
+  transition: color var(--transition-time) var(--function-time);
+  &:hover,&:focus{
+    color: var(--accent-color);
+  }
 }
 .menu-close__close {
   color: currentColor;
@@ -63,7 +75,7 @@
 .menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
-
+.menu__link--current{color: var(--accent-color);}
 .menu-contacts__tel {
   font-weight: 500;
   font-size: 34px;
