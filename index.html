@@ -215,7 +215,15 @@
                 <ul class="developments__list list">
                     <li class="developments__item">
                         <div class="development__thumb">
-                            <img class="developments__img" src="./images/what-we-do1.jpg" alt="написание_программы" width="370">
+                            <picture>
+                                <source
+                                    srcset="./images/what-we-do1.jpg 1x, 
+                                    ./images/what-we-do1-2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <img class="developments__img" 
+                                    src="./images/what-we-do1.jpg" alt="написание_программы">
+                            </picture>
                             <h3 class="development__subtitle">Десктопные приложения</h3>
                         </div>
                         
@@ -223,14 +231,30 @@
 
                     <li class="developments__item">
                         <div class="development__thumb">
-                            <img class="developments__img" src="./images/what-we-do2.jpg" alt="написание_программы" width="370">
+                            <picture>
+                                <source
+                                    srcset="./images/what-we-do2.jpg 1x, 
+                                    ./images/what-we-do2-2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <img class="developments__img" 
+                                    src="./images/what-we-do2.jpg" alt="Мобильная_версия">
+                            </picture>
                             <h3 class="development__subtitle">Мобильные приложения</h3>
                         </div>
                     </li>
 
                     <li class="developments__item">
                         <div class="development__thumb">
-                            <img class="developments__img" src="./images/what-we-do3.jpg" alt="написание_программы" width="370">
+                            <picture>
+                                <source
+                                    srcset="./images/what-we-do3.jpg 1x, 
+                                    ./images/what-we-do3-2x.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                >
+                                <img class="developments__img" 
+                                    src="./images/what-we-do3.jpg" alt="Дизайнерские_решения">
+                            </picture>
                             <h3 class="development__subtitle">Дизайнерские решения</h3>
                         </div>
                     </li>
@@ -245,7 +269,26 @@
                 </h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img class="team__img" src="./images/team_card_1.jpg" alt="Игорь" width="270">
+                        <picture>
+                            <source
+                                srcset="./images/team_card_1.jpg 1x,
+                                    ./images/team_card_1-2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="./images/team_card_1-tab.jpg 1x,
+                                    ./images/team_card_1-tab-2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="./images/team_card_1-tel.jpg 1x,
+                                    ./images/team_card_1-tel-2x.jpg 2x"
+                                media="(min-width: 320px)"
+                            >
+
+                            <img class="team__img"
+                            src="./images/team_card_1.jpg" alt="Игорь">
+                        </picture>
                         <div class="team__content">
                             <h3 class="team__name color">
                                 Игорь Демьяненко
@@ -290,7 +333,27 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="team__img" src="./images/team_card_2.jpg" alt="Ольга" width="270">
+                        <picture>
+                            <source
+                                srcset="./images/team_card_2.jpg 1x,
+                                    ./images/team_card_2-2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="./images/team_card_2-tab.jpg 1x,
+                                    ./images/team_card_2-tab-2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="./images/team_card_2-tel.jpg 1x,
+                                    ./images/team_card_2-tel-2x.jpg 2x"
+                                media="(min-width: 320px)"
+                            >
+
+                            <img class="team__img"
+                            src="./images/team_card_2.jpg" alt="Ольга">
+                        </picture>
+                        <!-- <img class="team__img" src="./images/team_card_2.jpg" alt="Ольга" width="270"> -->
                         <div class="team__content">
                             <h3 class="team__name color">
                                 Ольга Репина
@@ -335,7 +398,27 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="team__img" src="./images/team_card_3.jpg" alt="Николай" width="270">
+                        <picture>
+                            <source
+                                srcset="./images/team_card_3.jpg 1x,
+                                    ./images/team_card_3-2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="./images/team_card_3-tab.jpg 1x,
+                                    ./images/team_card_3-tab-2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="./images/team_card_3-tel.jpg 1x,
+                                    ./images/team_card_3-tel-2x.jpg 2x"
+                                media="(min-width: 320px)"
+                            >
+
+                            <img class="team__img"
+                            src="./images/team_card_3.jpg" alt="Николай">
+                        </picture>
+                        <!-- <img class="team__img" src="./images/team_card_3.jpg" alt="Николай" width="270"> -->
                         <div class="team__content">
                             <h3 class="team__name color">
                                 Николай Тарасов
@@ -380,7 +463,27 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="team__img" src="./images/team_card_4.jpg" alt="Михаил" width="270">
+                        <picture>
+                            <source
+                                srcset="./images/team_card_4.jpg 1x,
+                                    ./images/team_card_4-2x.jpg 2x"
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="./images/team_card_4-tab.jpg 1x,
+                                    ./images/team_card_4-tab-2x.jpg 2x"
+                                media="(min-width: 768px)"
+                            >
+                            <source
+                                srcset="./images/team_card_4-tel.jpg 1x,
+                                    ./images/team_card_4-tel-2x.jpg 2x"
+                                media="(min-width: 320px)"
+                            >
+
+                            <img class="team__img"
+                            src="./images/team_card_4.jpg" alt="Михаил">
+                        </picture>
+                        <!-- <img class="team__img" src="./images/team_card_4.jpg" alt="Михаил" width="270"> -->
                         <div class="team__content">
                             <h3 class="team__name color">
                                 Михаил Ермаков
