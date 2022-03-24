@@ -75,7 +75,10 @@
 .menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
-.menu__link--current{color: var(--accent-color);}
+.menu__link--current{
+  color: var(--accent-color);
+}
+
 .menu-contacts__tel {
   font-weight: 500;
   font-size: 34px;
@@ -107,6 +110,7 @@
   text-decoration: none;
 }
 .menu-social_link {
+  position: relative;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -115,4 +119,13 @@
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
+}
+.menu-social_link--line::after{
+  
+  content: "";
+  width: 22px;
+  height: 0px;
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  
 }

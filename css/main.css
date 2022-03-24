@@ -1471,11 +1471,20 @@ body.modal-oppen {
 }
 
 .menu-social_link {
+  position: relative;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.menu-social_link--line::after {
+  content: "";
+  width: 22px;
+  height: 0px;
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 /*# sourceMappingURL=main.css.map */
