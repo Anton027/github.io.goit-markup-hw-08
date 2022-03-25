@@ -13,6 +13,9 @@
       align-items: baseline;
       justify-content: space-around;
     }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
     @media screen and(min-width:768px) and(max-width:1199px) {
       margin-bottom: 60px;
     }
@@ -22,6 +25,12 @@
     @include desk {
       display: flex;
       align-items: baseline;
+    }
+  }
+
+  &__address{
+    @media screen and (max-width: 767px){
+      margin-bottom: 60px;
     }
   }
 
@@ -37,9 +46,7 @@
 
   text-decoration: none;
   font-style: normal;
-  @media screen and(max-width:767px) {
-    margin-bottom: 60px;
-  }
+  
 }
 
 .address-link.map {
@@ -70,9 +77,6 @@
   // }
   @include desk {
     margin-left: 70px;
-  }
-  @media screen and(max-width:767px) {
-    margin-bottom: 60px;
   }
 }
 
@@ -146,6 +150,8 @@
   }
 }
 .subscribe__input {
+  display: inline-block;
+  width: 100%;
   padding: 15px;
   @include desk {
     @include size(356px, 50px);
