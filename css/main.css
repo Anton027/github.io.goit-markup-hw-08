@@ -1100,9 +1100,7 @@
 
 .subscribe__input {
   display: inline-block;
-  width: 100%;
   padding: 15px;
-  min-width: 207px;
   color: var(--main-light-color);
   background-color: var(--primary-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1128,6 +1126,12 @@
   .subscribe__input {
     min-width: 450px;
     min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .subscribe__input {
+    width: 100%;
   }
 }
 

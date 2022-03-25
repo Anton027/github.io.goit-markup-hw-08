@@ -151,7 +151,7 @@
 }
 .subscribe__input {
   display: inline-block;
-  width: 100%;
+  
   padding: 15px;
   @include desk {
     @include size(356px, 50px);
@@ -162,8 +162,9 @@
   @media screen and(min-width:480px) and(max-width:1199px) {
     @include size(450px, 50px);
   }
-  min-width: 207px;
-  // min-height: 50px;
+  @media screen and(max-width: 479px) {
+    width: 100%;
+  }
 
   color: var(--main-light-color);
   background-color: var(--primary-bg-color);
