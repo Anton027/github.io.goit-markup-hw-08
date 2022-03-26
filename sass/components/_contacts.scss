@@ -1,6 +1,7 @@
 .contacts__link {
   display: flex;
   align-items: center;
+
   @include desk {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -15,7 +16,16 @@
 
   transition: color var(--transition-time) var(--function-time);
 }
-
+.contacts__link--padding-top{
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    padding-top: 17px;
+  }
+}
+.contacts__link--padding-bottom{
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    padding-bottom: 17px;
+  }
+}
 .contacts {
   display: none;
   margin-left: auto;
@@ -34,16 +44,6 @@
 .contacts__item {
   @media screen and(min-width:768px) and(max-width:1199px) {
     padding: 5px;
-  }
-  &:first-child{
-    @media screen and(min-width:768px) and(max-width:1199px) {
-      padding-top: 17px;
-    }
-  }
-  &:last-child{
-    @media screen and(min-width:768px) and(max-width:1199px) {
-      padding-bottom: 17px;
-    }
   }
 }
 // .contacts .contacts__item + .contacts__item {

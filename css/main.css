@@ -739,7 +739,13 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .filter .filter__item + .filter__item {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .filter__item {
     margin-left: 8px;
     margin-bottom: 15px;
@@ -750,8 +756,14 @@
 }
 
 @media screen and (max-width: 479px) {
-  .filter .filter__item + .filter__item {
-    margin-top: 8px;
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+  }
+  .filter__item {
+    margin: 4px;
+    flex-basis: calc(100% / 2 - 8px);
   }
 }
 
@@ -1326,6 +1338,18 @@ body.modal-oppen {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link--padding-top {
+    padding-top: 17px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link--padding-bottom {
+    padding-bottom: 17px;
+  }
+}
+
 .contacts {
   display: none;
   margin-left: auto;
@@ -1352,18 +1376,6 @@ body.modal-oppen {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item {
     padding: 5px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts__item:first-child {
-    padding-top: 17px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contacts__item:last-child {
-    padding-bottom: 17px;
   }
 }
 
@@ -1470,7 +1482,7 @@ body.modal-oppen {
 }
 
 .menu-close__close {
-  color: currentColor;
+  fill: currentColor;
 }
 
 .menu__link {
